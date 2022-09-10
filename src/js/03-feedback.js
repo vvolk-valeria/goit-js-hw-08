@@ -44,13 +44,14 @@ function onLocalStoragSave() {
    */ 
 function onLocalStoragGet(e) {
     const savedData = localStorage.getItem(FORM_DATA);
-    const saveFormObj = JSON.parse(savedData);
     if (savedData) {
+        const saveFormObj = JSON.parse(savedData);
         // console.log('saveFormObj', saveFormObj);
         // console.log(" Object.keys(saveFormObj);", Object.keys(saveFormObj));
         // console.log(" Object.values(saveFormObj);", Object.values(saveFormObj));
         // console.log(" Object.entries(saveFormObj)", Object.entries(saveFormObj));
         Object.entries(saveFormObj).forEach(([key, value]) => {
+            formObj[key] = value;
             form.elements[key].value = value;
             // if (inputEl.name === key) {
             //     inputEl.value = value;
