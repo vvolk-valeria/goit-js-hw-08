@@ -1,29 +1,60 @@
+
+
 .feedback-form {
+  margin-top: 20px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   max-width: 480px;
   padding: 12px;
-  background-color: #fff;
+  background-color: #f7daf2e1;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-radius: 8px;
+
 }
 
 .feedback-form label {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  color: #7bb6fa;
+  font-weight: 700;
 }
 
 .feedback-form button {
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
+  background-color: #f7daf2;
+  border-radius: 6px;
+  border: 2px solid #8fc2fcb7;
+  color: #7bb6fa;
+  font-weight: 700;
+}
+
+.feedback-form button:hover, 
+.feedback-form button:focus {
+  border: 2px solid #549ff5;
+  color: #3d83d3;
+
 }
 
 input,
 textarea {
   padding: 8px;
   font: inherit;
+  background-color: #f7daf2;
+  border-radius: 6px;
+  border: 2px solid #8fc2fcb7;
+
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border: 2px solid #549ff5;
+  outline: transparent;
 }
 
 textarea {

@@ -3,6 +3,16 @@
   --animation-duration: 250ms;
 }
 
+body {
+  background-color: rgb(1, 203, 213, 0.4);
+}
+
+.gallery-link {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
 .gallery {
   display: grid;
   max-width: 1140px;
@@ -15,6 +25,8 @@
 }
 
 .gallery__item {
+  overflow: hidden;
+  border-radius: 6px;
   position: relative;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
